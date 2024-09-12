@@ -1,0 +1,59 @@
+/* biodata.css */
+
+/* Atur gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif; /* Font yang digunakan untuk teks */
+    line-height: 1.6; /* Jarak antar baris */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+}
+
+/* Atur gaya untuk heading level 1 */
+h1 {
+    text-align: center; /* Pusatkan teks */
+    color: #333; /* Warna teks */
+    background-color: #e2e2e2; /* Warna latar belakang heading */
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Garis bawah */
+}
+
+/* Atur gaya untuk heading level 2 */
+h2 {
+    color: #444; /* Warna teks */
+}
+
+/* Atur gaya untuk heading level 3 */
+h3 {
+    color: #555; /* Warna teks */
+}
+
+/* Atur gaya untuk garis horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+/* Atur gaya untuk list ordered */
+ol {
+    margin: 0;
+    padding: 0 20px; /* Jarak kiri */
+}
+
+/* Atur gaya untuk list unordered */
+ul {
+    margin: 0;
+    padding: 0 20px; /* Jarak kiri */
+}
+
+/* Atur gaya untuk list item */
+li {
+    margin-bottom: 10px; /* Jarak bawah antar item */
+}
+
+/* Atur gaya untuk elemen <b> dalam list */
+li b {
+    color: #333; /* Warna teks */
+}
