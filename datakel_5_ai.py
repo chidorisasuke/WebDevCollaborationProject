@@ -1,3 +1,6 @@
+import math
+import random
+
 class Mahasiswa:
     def __init__(self, nama, universitas):
         self.nama = nama
