@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Member</title>
+</head>
+<body>
+    <h1>Edit Member</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="{{ member['name'] }}" required><br>
+
+        <label for="university">University:</label>
+        <input type="text" name="university" value="{{ member['university'] }}" required><br>
+
+        <label for="domicile">Domicile:</label>
+        <input type="text" name="domicile" value="{{ member['domicile'] }}" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="{{ member['email'] }}" required><br>
+
+        <input type="submit" value="Update">
+    </form>
+    <a href="/about">Cancel</a>
+</body>
+</html>

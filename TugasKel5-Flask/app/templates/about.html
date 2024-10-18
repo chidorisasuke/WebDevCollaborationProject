@@ -1,0 +1,87 @@
+<!-- app/templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>About Our Group</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='images/anggota1.jpg') }}"
+          alt="Anggota 1"
+        />
+        <h2>Rayhan Gading</h2>
+        <p>
+          Universitas: Universitas pembangunan nasional "veteran" jawa timur X
+        </p>
+        <p>Domisili: Surabaya</p>
+        <p>Email: rayhangading2@gmail.com</p>
+        <a href="/edit/1" class="edit-button">Edit</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='images/anggota2.jpg') }}"
+          alt="Anggota 2"
+        />
+        <h2>Robert William</h2>
+        <p>Universitas: Universitas Padjadjaran</p>
+        <p>Domisili: Sumedang</p>
+        <p>Email: robertw0112@gmail.com</p>
+        <a href="/edit/2" class="edit-button">Edit</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='images/anggota3.jpg') }}"
+          alt="Anggota 3"
+        />
+        <h2>Siti Arwiyah</h2>
+        <p>Universitas: Universitas Terbuka</p>
+        <p>Domisili: Bogor</p>
+        <p>Email: sitiarwiyah94@gmail.com</p>
+        <a href="/edit/3" class="edit-button">Edit</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='images/anggota4.jpg') }}"
+          alt="Anggota 4"
+        />
+        <h2>Wildan Miladji</h2>
+        <p>Universitas: Universitas Sangga Buana</p>
+        <p>Domisili: Bandung</p>
+        <p>Email: wildanmiladji53@gmail.com</p>
+        <a href="/edit/4" class="edit-button">Edit</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='images/anggota5.jpg') }}"
+          alt="Anggota 5"
+        />
+        <h2>Yahya Bachtiar</h2>
+        <p>Universitas: Universitas Airlangga</p>
+        <p>Domisili: Surabaya</p>
+        <p>Email: yahyabachtiar03@gmail.com</p>
+        <a href="/edit/5" class="edit-button">Edit</a>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 My Flask App</footer>
+  </body>
+</html>

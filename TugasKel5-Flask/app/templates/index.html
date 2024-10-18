@@ -1,0 +1,39 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to My Flask App</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>We aim to build an efficient, user-friendly web application that provides valuable resources to users while fostering collaboration among team members.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>Our mission is to develop web solutions using Flask that are scalable, secure, and simple to use, enabling users to focus on what's important.</p>
+        </div>
+
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Explore the site and learn more about our team on the <a href="/about">About</a> page, or reach out to us through the <a href="/contact">Contact</a> page.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 My Flask App
+    </footer>
+</body>
+</html>

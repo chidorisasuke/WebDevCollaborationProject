@@ -1,0 +1,33 @@
+<!-- app/templates/about_new.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <h1>About Our Group</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        {% for member_id, member in members.items() %}
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/anggota' + member_id|string + '.jpg') }}" alt="Anggota {{ member_id }}" />
+            <h2>{{ member.name }}</h2>
+            <p>Universitas: {{ member.university }}</p>
+            <p>Domisili: {{ member.domicile }}</p>
+            <p>Email: {{ member.email }}</p>
+            <a href="{{ url_for('edit', member_id=member_id) }}" class="edit-button">Edit</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <footer>&copy; 2024 My Flask App</footer>
+</body>
+</html>
